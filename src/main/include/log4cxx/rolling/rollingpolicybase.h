@@ -35,6 +35,9 @@
 namespace log4cxx {
     namespace rolling {
 
+        LOG4CXX_LIST_DEF(PatternConverterList, log4cxx::pattern::PatternConverterPtr);
+        LOG4CXX_LIST_DEF(FormattingInfoList, log4cxx::pattern::FormattingInfoPtr);
+
         /**
          * Implements methods common to most, it not all, rolling
          * policies.
@@ -57,13 +60,11 @@ namespace log4cxx {
           /**
            * File name pattern converters.
            */
-          LOG4CXX_LIST_DEF(PatternConverterList, log4cxx::pattern::PatternConverterPtr);
           PatternConverterList patternConverters;
 
           /**
            * File name field specifiers.
            */
-          LOG4CXX_LIST_DEF(FormattingInfoList, log4cxx::pattern::FormattingInfoPtr);
           FormattingInfoList patternFields;
 
           /**
