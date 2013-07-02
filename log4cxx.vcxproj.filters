@@ -13,6 +13,9 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
+    <Filter Include="Private Header Files">
+      <UniqueIdentifier>{37ac087f-fa42-4c39-ac93-ea5c2ad1a5c3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main\cpp\action.cpp">
@@ -554,5 +557,13 @@
     <ClInclude Include="src\main\include\log4cxx\writerappender.h">
       <Filter>Public Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\main\include\log4cxx\private\log4cxx_private.hw">
+      <Filter>Private Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\main\include\log4cxx\log4cxx.hw">
+      <Filter>Public Header Files</Filter>
+    </CustomBuild>
   </ItemGroup>
 </Project>
